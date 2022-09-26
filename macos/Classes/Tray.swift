@@ -110,7 +110,7 @@ class Tray: NSObject, NSMenuDelegate {
         let itemImage = NSImage(data: imageData)
       {
         let destSize = NSSize(width: kDefaultSizeWidth, height: kDefaultSizeHeight)
-        itemImage.size = destSizes
+        itemImage.size = destSize
         statusItem?.button?.image = itemImage
         statusItem?.button?.image?.isTemplate = true
         statusItem?.button?.imagePosition = NSControl.ImagePosition.imageLeft
